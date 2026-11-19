@@ -1,0 +1,7 @@
+---
+import media from '../data/media.json';
+import {url} from '../data/club';
+interface Props { n: number; eager?: boolean; }
+const {n,eager=false}=Astro.props; const m=media[n-1];
+---
+<picture><source type="image/webp" srcset={m.widths.map(w=>`${url(`media/${m.id}-${w}.webp`)} ${w}w`).join(', ')} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 40vw"/><img src={url(`media/${m.id}.jpg`)} width={m.width} height={m.height} alt={m.alt} loading={eager?'eager':'lazy'} decoding="async" /></picture>

@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro'; import Photo from '../components/Photo.astro'; import {CLUB,url} from '../data/club';
+---
+<Layout title="Events & club updates"><section class="wrap section"><p class="eyebrow">GET TOGETHER</p><h1>THE NEXT GOOD<br/>CONVERSATION.</h1><div class="split"><div><p class="intro">Follow @ku.car.club for the next gathering.</p><p>Confirmed dates and details will appear here when available. For current club updates, head to Instagram or connect with the community on WhatsApp.</p><div class="actions"><a class="button yellow" href={CLUB.instagram}>Instagram updates ↗</a><a class="button" data-join href={CLUB.whatsapp}>Join on WhatsApp ↗</a></div><a class="text-link" href={url('gallery/')}>Look back at club moments ↗</a></div><Photo n={8}/></div></section></Layout>

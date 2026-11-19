@@ -1,0 +1,4 @@
+---
+import {CLUB,url} from '../data/club';
+---
+<section class="join-block wrap" aria-labelledby="join-title"><div><p class="eyebrow">YOUR NEXT CONNECTION STARTS HERE</p><h2 id="join-title">GOOD CARS.<br/>BETTER COMPANY.</h2><p>Be part of the conversation. Connect with KU Car Club on WhatsApp.</p><a class="button yellow" data-join href={CLUB.whatsapp}>Join the club <span>↗</span></a><a class="text-link" href={url('join/')}>Show join QR ↗</a></div><div class="qr-card"><img src={url('media/join-qr.svg')} width="250" height="250" alt="Scan to open the KU Car Club WhatsApp invitation"/><strong>SCAN. CONNECT. YOU’RE UP NEXT.</strong><a href={CLUB.whatsapp}>Open WhatsApp ↗</a><a href={url('media/join-qr.png')} download>Download QR ↓</a></div></section>
